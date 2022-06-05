@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 class Answer extends StatelessWidget {
-  final Function sheikh;
+  final Function answerChoosen;
   final String answerText;
-   Answer(this.sheikh,this.answerText);
+   Answer(this.answerChoosen,this.answerText);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,9 @@ class Answer extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: ElevatedButton(
             child: Text(answerText),
-            onPressed: () => sheikh,
+            onPressed: () {
+              answerChoosen();
+            },
         ),
       ),
     );

@@ -34,18 +34,22 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var question=[
-  {'questionText' :  '1.Which one is mutable widget?',
+  {
+    'questionText' :  '1.Which one is mutable widget?',
   'answers':['Statefull','Stateless','Container','SizedBox']
   },
 
-{'questionText' : '2.Are stateless widget support setstate?',
+{
+  'questionText' : '2.Are stateless widget support setstate?',
   'answers':['yes','no','Sometimes yes','It support when we use custom widget']
 },
-    { 'questionText' : '3.why we use build method',
-      'Answers':['yes','no','Sometimes yes','It support when we use custom widget']
+    {
+      'questionText' : '3.why we use build method',
+      'answers':['to run build the full scene','no','Sometimes yes','It support when we use custom widget']
     },
 
-{'questionText' : '4.Why we need to use mixin',
+{
+  'questionText' : '4.Why we need to use mixin',
   'answers':['because dart not support inheritannce','without any reason','Sometimes yes','It support when we use custom widget']
 },
 {'questionText' : '5.Are flutter better then react js?',
